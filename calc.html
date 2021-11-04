@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="price-calculator-master/style.css">   
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+</head>
+<body>
+    
+    <form class="cart" id="cart_custom">
+        <fieldset id="product-summary">
+            <h2>Select the Items</h2>
+            <div class="row">
+                <div class="item">
+                    <div class="order">
+                        <label for="paginas">Páginas que quieres que tenga tu web (min. 3, por ejemplo "inicio" - "quienes somos" - "contacto")</label>
+                        <br>
+                        <input class="w-72" type="number" name="paginas" id="paginas" min="3" placeholder="3" size="3" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="order">
+                        <label for="idioma">Añadir un idioma (por defecto incluimos el Español)</label>
+                        <br>
+                        <input class="w-72" type="number" name="idioma" id="idioma" min="0" placeholder="0" size="0" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">     
+                    <div class="order">
+                        <label for="p_supple">Añadir imagenes de stock (por defecto incluimos 10)</label>
+                        <br>
+                        <input type="number" name="p_supple" id="p_supple" min="0" placeholder="0" size="0" >
+                    </div>
+                </div>
+                <div class="item">     
+                    <div class="order">
+                        <label for="seo">Posicionamiento web</label>
+                        <br>
+                        <input type="radio" name="posicionamiento" value="seoSi" id="seo-si" checked> <label for="seo-si">Sí</label><br>
+                        <input type="radio" name="posicionamiento" value="seoNo" id="seo-no"> <label for="seo-no">No</label><br>
+
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <div id="summary">
+        
+            <h2>Provide the Shipping Details</h2>
+            
+            <div class="row">
+                <div class="group col3 state">
+                    <label for="state">Diseño de la web:</label>
+                    <select id="id_state" name="state" required>
+                            <option value="">Elige uno:</option>
+                            <option value="ES">Diseño básico</option>
+                            <option value="IL">Diseño experto</option>
+                            <option value="NH">Diseño pro</option>
+                    </select>
+                </div>
+
+                <div class="group col3 method">
+
+                    <label>Mantenimiento mensual (incluimos 5h en el presupuesto):</label><br>
+                    <input type="radio" name="ship" value="us" id="method-us" checked> <label for="method-us">Sí (50€/mes)</label><br>
+                    <input type="radio" name="ship" value="pickup" id="method-free"> <label for="method-free">No</label><br>
+
+                </div>
+
+                <div class="group col3 special">
+                    <label>Special:</label><br>
+                    <input type="checkbox" name="special-gift" id="gift" value="gift">
+                        <label for="gift">This is a gift(include a card)</label><br>
+                    <input type="checkbox" name="special-mailing" id="mailing" value="mailing">
+                        <label for="mailing">Sign up for the mailing list</label><br>
+                    <input type="checkbox" name="special-recipes" id="recipes" value="recipes">
+                        <label for="recipes">Include free recipes</label>
+                </div>
+
+            </div>
+
+            <div class="group col2 notes">
+                <label for="message">Algo que debamos saber:</label><br>
+                <textarea id="message" name="message" rows="10" cols="2" placeholder="Escríbenos..."></textarea>
+            </div>
+
+        </div>
+
+        <div class="group col2 calc">
+                <p> <label for="btn_estimate">Calcula tu presupuesto</label><br>
+                   
+                    <input type="submit" class="bg-verdeOscuro botonEnviar" value="Calcular" id="btn_estimate">
+                    <input id="total_estimate" disabled="true" type="text" name="total" >
+                </p>
+                <div id="results">
+                    
+                </div>
+            </div>
+            
+
+    </form>
+    
+      <script src="calc.js"></script>
+</body>
+</html>

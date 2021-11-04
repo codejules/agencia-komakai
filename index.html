@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+<body class="font-quick">
+    <section class="bg-gris">
+      <div class="container mx-auto max-w-screen-2xl grid md:grid-flow-col gap-4 pt-6 px-4 lg:px-0">
+    <div class="row-span-1">
+      <div class="flex text-verde hover:text-white">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewbox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+        <span class="font-semibold text-2xl tracking-tight text-azul-900">Tailwind CSS</span>
+      </div>
+    </div>
+
+    <div class="w-full">
+     <nav class="border-solid border-verde border-b-2 col-span-2 pb-5">
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto grid grid-cols-2">
+        <div class="text-md lg:flex-grow font-light">
+          <a href="#responsive-header" class="hover:text-black block mt-4 inline-block lg:mt-0 bg-gradient-to-r from-green-400 to-blue-500
+           md:mr-4 hover:bg-white p-2 rounded-md text-white">
+            <i class="fas fa-desktop"></i> Asesoramiento Informático
+          </a>
+        </div>
+        <div class="text-md lg:flex-grow text-right font-bold">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-azul-900 mr-4 hover:text-verde hover:bg-white p-2 rounded">
+            <i class="fas fa-envelope"></i> Contáctanos 2.0
+          </a>
+        </div> 
+        
+      </div>
+     </nav> 
+    <nav class="row-span-2 col-span-2 mt-5">
+        <div class="block lg:hidden">
+          <button id="boton" class="flex items-center px-3 py-2 border rounded text-azul-900 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-6 w-6" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+          <div class="text-xl lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-azul-900 mr-4 hover:border-t-2 hover:border-b-2 hover:py-3 hover:border-verde font-bold">
+              Docs
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-azul-900 mr-4 hover:border-t-2 hover:border-b-2 hover:py-3 hover:border-verde font-bold">
+              Examples
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-azul-900 font-bold">
+              Blog
+            </a>
+          </div>
+          <div>
+            <a href="contacto.html" class="btn-consulta hover:text-azul-900">Calcula tu presupuesto</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    </div>
+
+
+      <div class="container mx-auto max-w-screen-2xl mt-6">
+          <div class="flex flex-row flex-wrap">
+            <div class="md:w-2/4 w-full px-3 flex flex-row flex-wrap float-left">
+              <div class="w-full font-semibold relative pt-3 xl:pt-24">
+                <div class="text-4xl xl:text-6xl font-bold">Soluciones para <br>el día a día</div>
+                <div class="text-2xl py-4">Descubre como aprovechar al máximo</div>
+                <div class="text-sm hover:text-black text-xl cursor-pointer text-center md:absolute 
+                rounded-3xl py-3 px-5 bg-white text-white bg-gradient-to-r from-pink-400 to-red-500">Presupuesto gratuito</div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 w-72 xl:pt-12 mx-auto">
+              <img class="" src="./img/hero-women-accountant-600x586.png">  
+            </div>  
+        </div>
+        </div>
+
+    </section> 
+
+    <div class="container mx-auto max-w-screen-2xl pt-20 text-center">
+      <h1 class="tituloh1">Necesitas una solución personalizada <span class="text-verde">?</span></h1>
+      <p class="px-2 py-5 text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, ut.</p>
+      <button class="bg-gradient-to-r from-green-400 to-blue-500 btn-consulta hover:text-azul-900">Consulta a un click</button>   
+      </div>
+
+
+
+    <div class="container mx-auto max-w-screen-2xl pt-20">
+    <h1 class="tituloh1 text-center">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</h1>
+    </div>
+
+    <div class="container mx-auto max-w-screen-2xl pt-10">
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1 text-left p-10 m-2 w-100 md:w-1/3 border border-gris border-2 rounded-2xl"><span><i class="fas fa-calendar-alt fa-2x text-verde hover:text-azul-900"></i></span>
+        <h2 class="text-2xl py-4 font-bold">Desarrollo y maquetación Web</h2>
+        <p>Trabajamos con las principales herramientas de programación para poner en marcha tu proyecto web. <strong>HTML5, CSS3, Bootstrap, TailwindCSS, Javascript, React, Wordpress</strong>.
+        <br><br>
+          Bocetamos, diseñamos, ponemos a punto y validamos con el cliente los puntos para comenzar desde cero, como más te guste.
+        </p>
+      </div>
+      <div class="flex-1 text-left p-10 m-2 w-100 md:w-1/3 border border-gris border-2 rounded-2xl"><span><i class="fas fa-folder fa-2x text-verde hover:text-azul-900"></i></span>
+        <h2 class="text-2xl py-4 font-bold">Digital Marketing - SEO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus rerum corporis obcaecati recusandae soluta?</p>
+      </div>
+      <div class="flex-1 text-left p-10 m-2 w-100 md:w-1/3 border border-gris border-2 rounded-2xl"><span><i class="fas fa-chart-line fa-2x text-verde hover:text-azul-900"></i></span>
+        <h2 class="text-2xl py-4 font-bold">Tienda Online - Ecommerce</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus rerum corporis obcaecati recusandae soluta?</p>
+      </div>
+  </div>
+  </div>
+
+
+  <div class="container mx-auto max-w-screen-2xl pt-10">
+
+  <h1 class="text-center text-5xl mt-8 tracking-wide relative font-extrabold">Nuestros precios</h1>
+
+  <div class="flex flex-row justify-center mt-8 mb-16 text-sm tracking-tight font-medium text-gray-700">
+    <p class="m-3 text-xl">Mensual</p>
+
+    <!-- Toggle Button -->
+    <label for="toggle" class="flex items-center cursor-pointer">
+      <!-- toggle -->
+      <div class="relative">
+        <!-- hidden input -->
+        <input id="toggle" type="checkbox" class="hidden" onclick="myFunction()" />
+        <!-- line -->
+        <div class="w-14 h-7 bg-verde rounded-full shadow-inner"></div>
+        <!-- dot -->
+        <div class="toggle_dot absolute w-7 h-7 bg-white rounded-full shadow inset-y-0 left-0"></div>
+      </div>
+    </label>
+
+    <p class="m-3">
+      <span class="text-xl">Anual</span>
+    <span class="ml-2 bg-verde text-white rounded-2xl py-1 px-2">Ahorra 25%</span>
+    </p>
+  </div>
+
+  <div class="flex flex-col md:flex-row md:transform md:scale-100 justify-center mx-2 lg:mx-0 mb-16 lg:mb-0">
+
+    <div class="w-full lg:w-1/4 border rounded-lg md:rounded-r-none text-center p-5 lg:mx-auto md:mx-0 my-2 md:my-6 font-medium z-10 shadow-lg mb-12">
+      <div class="text-3xl pt-5 pb-10 font-bold">Para empezar</div>
+      <div id="month" class="text-5xl month">24&euro; <span class="text-lg text-verde font-bold">/mes</span></div>
+      <div id="annual" class="text-5xl annual hidden">250&euro; <span class="text-lg text-verde font-bold">/año</span></div>
+      <div class="my-10">
+      <div class="text-sm my-3">
+        <li class="flex items-center">
+          <div
+          class="rounded-full p-2 fill-current text-green-700"
+          >
+          <svg
+          class="w-6 h-6 align-middle"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          >
+          <path
+          d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          ></path>
+          <polyline
+          points="22 4 12 14.01 9 11.01"
+          ></polyline>
+        </svg>
+      </div>
+        <span class="text-center text-xl">500 GB Storage</span>
+      </li>        
+      </div>
+      <div class="text-sm my-3">
+        <li class="flex items-center">
+          <div
+          class="rounded-full p-2 fill-current text-green-700"
+          >
+          <svg
+          class="w-6 h-6 align-middle"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          >
+          <path
+          d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          ></path>
+          <polyline
+          points="22 4 12 14.01 9 11.01"
+          ></polyline>
+        </svg>
+      </div>
+        <span class="text-center text-xl">500 GB Storage</span>
+      </li>        
+      </div>    
+      <div class="text-sm my-3">
+        <li class="flex items-center">
+          <div
+          class="rounded-full p-2 fill-current text-green-700"
+          >
+          <svg
+          class="w-6 h-6 align-middle"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          >
+          <path
+          d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          ></path>
+          <polyline
+          points="22 4 12 14.01 9 11.01"
+          ></polyline>
+        </svg>
+      </div>
+        <span class="text-center text-xl">500 GB Storage</span>
+      </li>        
+      </div>   
+      </div>
+      
+      <a href="#" target="_blank">
+        <button class="bg-gradient-to-r from-green-400 to-blue-500 mt-3 text-lg font-semibold bg-black w-1/2 mx-auto text-white rounded-full px-6 py-3 block shadow-xl hover:bg-verde hover:text-black">
+        Select                                 
+        <span class="pl-2 material-icons align-middle text-sm">
+          east
+      </span>
+      </button></a>
+    </div>
+
+    <div class="w-full lg:w-1/4 border rounded-lg text-center pt-0 p-5 px-0 lg:mx-auto md:mx-0 mb-2 font-medium z-10 shadow-lg mb-12">
+      <div class="text-2xl leading-none rounded-t-lg bg-gray-200 text-verde uppercase py-6 text-center tracking-wide">
+        Más Popular
+        </div>
+        <div class="text-2xl pb-5">
+          <div class="text-3xl pt-5 pb-10 font-bold">Profesional</div>
+        <div id="month" class="text-5xl month">34&euro; <span class="text-lg text-verde font-bold">/mes</span></div>
+        <div id="annual" class="text-5xl annual hidden">300&euro; <span class="text-lg text-verde font-bold">/año</span></div>
+        <div class="my-10 px-5">
+          <div class="text-sm my-3">
+            <li class="flex items-center">
+              <div
+              class="rounded-full p-2 fill-current text-green-700"
+              >
+              <svg
+              class="w-6 h-6 align-middle"
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              >
+              <path
+              d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+              ></path>
+              <polyline
+              points="22 4 12 14.01 9 11.01"
+              ></polyline>
+            </svg>
+          </div>
+            <span class="text-center text-xl">500 GB Storage</span>
+          </li>        
+          </div>
+          <div class="text-sm my-3">
+            <li class="flex items-center">
+              <div
+              class="rounded-full p-2 fill-current text-green-700"
+              >
+              <svg
+              class="w-6 h-6 align-middle"
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              >
+              <path
+              d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+              ></path>
+              <polyline
+              points="22 4 12 14.01 9 11.01"
+              ></polyline>
+            </svg>
+          </div>
+            <span class="text-center text-xl">500 GB Storage</span>
+          </li>        
+          </div>    
+          <div class="text-sm my-3">
+            <li class="flex items-center">
+              <div
+              class="rounded-full p-2 fill-current text-green-700"
+              >
+              <svg
+              class="w-6 h-6 align-middle"
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              >
+              <path
+              d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+              ></path>
+              <polyline
+              points="22 4 12 14.01 9 11.01"
+              ></polyline>
+            </svg>
+          </div>
+            <span class="text-center text-xl">500 GB Storage</span>
+          </li>        
+          </div>   
+          </div>
+        <a href="#" target="_blank">
+          <button class="bg-gradient-to-r from-green-400 to-blue-500 mt-3 text-lg font-semibold bg-black w-1/2 mx-auto text-white rounded-full px-6 py-3 block shadow-xl hover:bg-verde">
+            Select                                 
+            <span class="pl-2 material-icons align-middle text-sm">
+              east
+          </span>
+          </button>        </a>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/4 border rounded-lg md:rounded-l-none text-center p-5 lg:mx-auto md:mx-0 my-2 md:my-6 font-medium z-10 shadow-lg">
+      <div class="text-3xl pt-5 pb-10 font-bold">Avanzado</div>
+      <div id="month" class="text-5xl month">44&euro; <span class="text-lg text-verde font-bold">/mes</span></div>
+      <div id="annual" class="text-5xl annual hidden">420&euro; <span class="text-lg text-verde font-bold">/año</span></div>
+      <div class="my-10">
+        <div class="text-sm my-3">
+          <li class="flex items-center">
+            <div
+            class="rounded-full p-2 fill-current text-green-700"
+            >
+            <svg
+            class="w-6 h-6 align-middle"
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            >
+            <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+            ></path>
+            <polyline
+            points="22 4 12 14.01 9 11.01"
+            ></polyline>
+          </svg>
+        </div>
+          <span class="text-center text-xl">500 GB Storage</span>
+        </li>        
+        </div>
+        <div class="text-sm my-3">
+          <li class="flex items-center">
+            <div
+            class="rounded-full p-2 fill-current text-green-700"
+            >
+            <svg
+            class="w-6 h-6 align-middle"
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            >
+            <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+            ></path>
+            <polyline
+            points="22 4 12 14.01 9 11.01"
+            ></polyline>
+          </svg>
+        </div>
+          <span class="text-center text-xl">500 GB Storage</span>
+        </li>        
+        </div>    
+        <div class="text-sm my-3">
+          <li class="flex items-center">
+            <div
+            class="rounded-full p-2 fill-current text-green-700"
+            >
+            <svg
+            class="w-6 h-6 align-middle"
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            >
+            <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+            ></path>
+            <polyline
+            points="22 4 12 14.01 9 11.01"
+            ></polyline>
+          </svg>
+        </div>
+          <span class="text-center text-xl">500 GB Storage</span>
+        </li>        
+        </div>   
+        </div>
+      <a href="#" target="_blank">
+        <button class="bg-gradient-to-r from-green-400 to-blue-500 mt-3 text-lg font-semibold bg-black w-1/2 mx-auto text-white rounded-full px-6 py-3 block shadow-xl hover:bg-verde">
+          Select                                 
+          <span class="pl-2 material-icons align-middle text-sm">
+            east
+        </span>
+        </button> 
+            </a>
+    </div>
+  </div>
+</div>
+
+    <div class="container mx-auto max-w-screen-2xl xl:pt-40">
+      <div class="flex flex-col lg:flex-row px-5 lg:mt-10">
+
+        <div class="w-full lg:w-1/2 mr-4 xl:mx-24">
+          <img class="rounded rounded-2xl hover:opacity-80" src="https://avada.theme-fusion.com/accountant/wp-content/uploads/sites/147/2020/08/empowering-you-800x800.jpg" alt="">
+        </div>
+
+    <div class="w-full lg:w-1/2 mt-10 lg:mt-0" x-data="{selected:null}">
+      <h1 class="pb-4 xl:py-7 tituloh1">Te ayudamos a tomar las mejores decisiones</h1>
+      <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum nulla placeat sint atque, voluptate cupiditate rem.</p>
+
+        <ul class="mt-12">
+                
+        <li class="bg-gris rounded-2xl">
+    
+          <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-bold hover:text-verde">
+                <i class="far fa-check-circle pr-5"></i>Mejora en UX (experiencia de usuario)
+              </span>
+              <i class="fa fa-angle-double-down animate-pulse invisible md:visible"></i>
+              </div>
+                  </button>
+    
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+            <div class="p-6">
+              <p>reCAPTCHA v2 is not going away! We will continue to fully support and improve security and usability for v2.</p>
+    <p>reCAPTCHA v3 is intended for power users, site owners that want more data about their traffic, and for use cases in which it is not appropriate to show a challenge to the user.</p>
+    <p>For example, a registration page might still use reCAPTCHA v2 for a higher-friction challenge, whereas more common actions like sign-in, searches, comments, or voting might use reCAPTCHA v3. To see more details, see the reCAPTCHA v3 developer guide.</p>
+            </div>
+          </div>
+    
+        </li>
+    
+      
+        <li class="bg-gris rounded-2xl my-3">
+    
+          <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 2 ? selected = 2 : selected = null">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-bold hover:text-verde">
+                <i class="far fa-check-circle pr-5"></i>Escalabilidad de tu negocio
+              </span>
+              <i class="fa fa-angle-double-down animate-pulse invisible md:visible"></i>
+            </div>
+                  </button>
+    
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+            <div class="p-6">
+              <p>For reCAPTCHA v3, create a separate key for testing environments. Scores may not be accurate as reCAPTCHA v3 relies on seeing real traffic.</p>
+    <p>For reCAPTCHA v2, use the following test keys. You will always get No CAPTCHA and all verification requests will pass.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="bg-gris rounded-2xl">
+    
+          <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 3 ? selected = 3 : selected = null">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-bold hover:text-verde">
+                <i class="far fa-check-circle pr-5"></i>Diseño óptimo dispositivos moviles (responsive)
+              </span>
+              <i class="fa fa-angle-double-down animate-pulse invisible md:visible"></i>
+            </div>
+                  </button>
+    
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+            <div class="p-6">
+              <p>To do this, load the v3 site key as documented, and then explicitly render v2 using grecaptcha.render.</p>
+    <p>You are allowed to hide the badge as long as you include the reCAPTCHA branding visibly in the user flow. Please include the following text:</p>
+    <p>Yes, please use "www.recaptcha.net" in your code in circumstances when "www.google.com" is not accessible.</p>
+    <ul>
+    <li>First, replace &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt; with &lt;script src="https://www.recaptcha.net/recaptcha/api.js" async defer&gt;&lt;/script&gt;</li>
+    <li>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</li>
+    </ul>
+    <p>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</p>
+            </div>
+          </div>   
+        </li>
+        
+
+        <li class="bg-gris rounded-2xl my-3">
+    
+          <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 4 ? selected = 4 : selected = null">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-bold hover:text-verde">
+                <i class="far fa-check-circle pr-5"></i>Garantía de indexación en Google
+              </span>
+              <i class="fa fa-angle-double-down animate-pulse invisible md:visible"></i>
+            </div>
+                  </button>
+    
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+            <div class="p-6">
+              <p>To do this, load the v3 site key as documented, and then explicitly render v2 using grecaptcha.render.</p>
+    <p>You are allowed to hide the badge as long as you include the reCAPTCHA branding visibly in the user flow. Please include the following text:</p>
+    <p>Yes, please use "www.recaptcha.net" in your code in circumstances when "www.google.com" is not accessible.</p>
+    <ul>
+    <li>First, replace &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt; with &lt;script src="https://www.recaptcha.net/recaptcha/api.js" async defer&gt;&lt;/script&gt;</li>
+    <li>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</li>
+    </ul>
+    <p>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</p>
+            </div>
+          </div>   
+        </li> 
+        
+        <li class="bg-gris rounded-2xl">
+    
+          <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 5 ? selected = 5 : selected = null">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-bold hover:text-verde">
+                <i class="far fa-check-circle pr-5"></i>Creamos el contenido para tu web
+              </span>
+              <i class="fa fa-angle-double-down animate-pulse invisible md:visible"></i>
+            </div>
+                  </button>
+    
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container5" x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
+            <div class="p-6">
+              <p>To do this, load the v3 site key as documented, and then explicitly render v2 using grecaptcha.render.</p>
+    <p>You are allowed to hide the badge as long as you include the reCAPTCHA branding visibly in the user flow. Please include the following text:</p>
+    <p>Yes, please use "www.recaptcha.net" in your code in circumstances when "www.google.com" is not accessible.</p>
+    <ul>
+    <li>First, replace &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt; with &lt;script src="https://www.recaptcha.net/recaptcha/api.js" async defer&gt;&lt;/script&gt;</li>
+    <li>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</li>
+    </ul>
+    <p>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</p>
+            </div>
+          </div>   
+        </li>
+
+          </ul>
+      </div>
+      </div>   
+      </div>
+
+      <div class="bg-gris-400 mt-12 md:mt-24">
+        <div class="container mx-auto xl:w-6/12">
+            <div>
+                <div class="text-center">
+                    <h1 class="py-7 tituloh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="text-gray-400 dark:text-gray-400">Fill up the form below to send us a message.</p>
+                </div>
+                <div class="m-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    
+                        <input type="hidden" name="apikey" value="567801cb-92f9-4c67-8ed5-573d90896f95">
+                        <input type="hidden" name="subject" value="Nueo formulario de email">
+                        <input type="checkbox" name="botcheck" id="" style="display: none;">
+    
+                        <div class="grid md:grid-cols-3 gap-4">
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
+                            <input type="text" name="Nombre" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email</label>
+                            <input type="email" name="Email" id="email" placeholder="mail@empresa.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Asunto</label>
+                            <input type="text" name="Asunto" id="phone" placeholder="Describe el asunto de tu mail" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        </div>
+                      </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Descripción</label>   
+                            <textarea rows="5" name="Mensaje" id="message" placeholder="Escribe tu mensaje..." class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                        </div>
+
+                        <div class="pb-4">
+                  <label class="flex justify-start items-start">
+                    <div class="border-2 rounded border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                      <input type="checkbox" class="opacity-0 absolute" required>
+                      <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewbox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                    </div>
+                    <div class="select-none">He leído y acepto la <a class="underline" href="#">política de privacidad</a>*</div>
+                  </label>  
+                        </div>
+                        <div class="my-6 text-center">
+                            <button type="submit" class="w-1/2 xl:w-1/6 px-2 py-3 text-xl font-bold text-white bg-verde rounded-md focus:bg-indigo-400 focus:outline-none hover:bg-azul-900">ENVIAR</button>
+                        </div>
+                        <p class="text-base text-center text-gray-400" id="result">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer class="bg-gray-50 text-gray-600 px-6 lg:px-8 py-12">
+      <div class="max-w-screen-2xl mx-auto mb-6 lg:mb-8 flex justify-between">
+        <div class="flex text-verde hover:text-white">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewbox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-2xl tracking-tight text-azul-900">Tailwind CSS</span>
+        </div>         <a href="#" class="flex items-center hover:text-gray-400">
+           <span>Ir arriba</span> 
+           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path></svg>
+          </a> 
+      </div>
+      <div class="max-w-screen-2xl mx-auto border-t-2 border-gray-200 pt-8 space-y-10">
+    
+        <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
+          <div class="md:col-span-1 py-1 md:pr-4 md:border-r-2 md:border-gray-200">
+            <h5 class="text-xl font-semibold text-gray-700 leading-none">Company</h5>
+          </div>
+          <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 lg:space-x-12">
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Landingpages</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Features</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Download brochure</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Careers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
+          <div class="md:col-span-1 py-1 md:pr-4 md:border-r-2 md:border-gray-200">
+            <h5 class="text-xl font-semibold text-gray-700 leading-none">About</h5>
+          </div>
+          <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 lg:space-x-12">
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Childcare</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Team notes</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Automatic follow-up</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-400">Processor agreement</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
+          <div class="md:col-span-1 py-1 md:pr-4 md:border-r-2 md:border-gray-200">
+            <h5 class="text-xl font-semibold text-gray-700 leading-none">Follow us</h5>
+          </div>
+          <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
+            <ul class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-12">
+              <li>
+                <a href="#" class="flex space-x-2 font-normal text-base hover:text-gray-400">
+                  <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                  <span>
+                    Twitter
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex space-x-2  font-normal text-base hover:text-gray-400">
+                  <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>
+                    Instagram
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex space-x-2  font-normal text-base hover:text-gray-400">
+                  <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewbox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                  </svg>
+                  <span>
+                    Facebook
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="max-w-screen-2xl mx-auto  space-y-4 mt-8 lg:mt-12 border-t-2 border-gray-200 pt-8 ">
+        <p class="text-sm text-center md:text-left">&copy;2020 Company. All rights reserved. | All rights reserved</p>
+      </div>
+    </footer>
+
+ <!--JS for toggle-->
+ <script>
+  function myFunction() {
+    var x = document.querySelectorAll('.month');
+    var y = document.querySelectorAll('.annual');
+    for (var i = 0; i < x.length; i++) {
+      if (document.getElementById("toggle").checked == true) {
+        x[i].classList.add('hidden');
+        y[i].classList.remove('hidden');
+      } else {
+        x[i].classList.remove('hidden');
+        y[i].classList.add('hidden');
+      }
+    }
+  }
+</script>
+
+</body>
+<script src="form.js" defer></script>
+<script src="selector.js" defer></script>
+<script src="navbar.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.8.0/dist/alpine.js" defer></script>
+
+</html>
