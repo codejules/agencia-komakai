@@ -1,2 +1,2 @@
 # agenciakomakai
-Desarrollo web desde 0 de una plantilla tema Agencia
+Desarrollo web desde 0 de una plantilla html.
